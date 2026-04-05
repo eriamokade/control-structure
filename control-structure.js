@@ -1,8 +1,16 @@
 let result = "";
 
-for (let i = 1; i <= 10; i++){result +=("5 x "+ i + "="+ (5 * i)+"<br>")}
+for (let num = 1; num <= 5; num++) {
+    result += "<b>Table of " + num + "</b><br>";
 
-document.getElementById("table").innerHTML=result;
+    for (let i = 1; i <= 10; i++) {
+        result += num + " x " + i + " = " + (num * i) + "<br>";
+    }
+
+    result += "<br>";
+}
+
+document.getElementById("table").innerHTML = result;
 
 function calculate(operator) {
     const n1 = parseFloat(document.getElementById('num1').value) || 0;

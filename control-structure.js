@@ -1,9 +1,9 @@
 let result = "";
 
-for (let num = 1; num <= 5; num++) {
+for (let num = 1; num <= 12; num++) {
     result += "<b>Table of " + num + "</b><br>";
 
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 1; i <= 12; i++) {
         result += num + " x " + i + " = " + (num * i) + "<br>";
     }
 
